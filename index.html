@@ -7,15 +7,26 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="mensagem.js"></script>
 
     <title>Portifolio</title>
 </head>
 
 <body>
+
+
     <div class="particulas"></div>
 
     <nav class="menu-principal">
-        <ul class="menu">
+
+
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
+
+        <ul class="menu" id="menu">
             <li class="menu-link">
                 <a href="#inicio">Início</a>
             </li>
@@ -113,21 +124,7 @@
                 <textarea placeholder="Mensagem" class="texto-contato" id="mensagem" rows="6" required></textarea>
 
                 <button type="submit" class="btn">Enviar para WhatsApp</button>
-                <script>
-                    function enviarWhatsApp(event) {
-                        event.preventDefault();
-                        const nome = document.getElementById('nome').value;
-                        const mensagem = document.getElementById('mensagem').value;
-                        const numero = '5511952630864';
 
-
-                        const texto = `Olá, meu nome é ${nome}. ${mensagem}`;
-                        const textoFormatado = encodeURIComponent(texto);
-                        const url = `https://wa.me/${numero}?text=${textoFormatado}`;
-                        window.open(url, '_blank');
-                    }
-
-                </script>
             </form>
         </div>
 
@@ -149,6 +146,8 @@
 
         </footer>
 
+        <script src="navbar.js"></script>
 </body>
+
 
 </html>
