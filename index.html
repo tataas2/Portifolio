@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <title>Portifolio</title>
+</head>
+
+<body>
+    <div class="particulas"></div>
+
+    <nav class="menu-principal">
+        <ul class="menu">
+            <li class="menu-link">
+                <a href="#inicio">Início</a>
+            </li>
+            <li class="menu-link">
+                <a href="#sobre">Sobre</a>
+            </li>
+            <li class="menu-link">
+                <a href="#projetos">Projetos</a>
+            </li>
+            <li class="menu-link">
+                <a href="#contatos">Contato</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="inicio">
+        <div class="caixa-inicio">
+            <img src="img/taina.png" alt="Foto de Tainá Souza" id="foto">
+            <h1>Tainá Souza</h1>
+            <p class="pInicio">Desenvolvedora back-end em formação</p>
+        </div>
+
+    </main>
+
+
+    <section id="sobre" class="informacoes">
+
+        <h2>Sobre Mim</h2>
+        <div class="caixa-sobre">
+            <p id="pSobre">Sou estudante de Ciência da Computação e formada em Técnico em Análise e Desenvolvimento de
+                Sistemas, com foco em desenvolvimento back-end. Tenho me aprofundado em C#, ASP.NET Core, Entity
+                Framework e bancos de dados como SQL Server e PostgreSQL. Estou aprendendo a construir APIs RESTful
+                seguindo boas práticas de arquitetura e segurança. Embora meu foco principal seja o back-end, também
+                estudo front-end com HTML, CSS, Bootstrap e React, visando compreender o desenvolvimento web de forma
+                completa.
+
+                Tenho interesse em cibersegurança e inteligência artificial, áreas que venho explorando com dedicação
+                para integrar em projetos futuros.</p>
+        </div>
+    </section>
+
+    <section id="projetos">
+
+        <h2 class="projeto-titulo">Meus Projetos</h2>
+        <div class="projeto">
+            <div class="projetos-cards">
+
+                <img src="img/mitsuri-kanroji-3840x2160-16948.jpg" alt="" class="projetos-img">
+                <div class="caixa-projetos-texto">
+                    <h3 class="titulos-cards">Pizzaria</h3>
+
+                    <p class="paragrafos-cards">Projeto temático desenvolvido com HTML, CSS e JavaScript, focado em
+                        front-end. A aplicação simula o site de uma pizzaria inspirada no universo Marvel, com layout
+                        responsivo, interações dinâmicas e identidade visual personalizada. Idealizado para exercitar
+                        estruturação de páginas, manipulação do DOM e estilização criativa.</p>
+                </div>
+            </div>
+
+            <div class="projetos-cards">
+                <img src="img/mitsuri-kanroji-3840x2160-16948.jpg" alt="" class="projetos-img">
+                <div class="caixa-projetos-texto">
+                    <h3 class="titulos-cards">Pizzaria</h3>
+
+                    <p class="paragrafos-cards">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+                        tempore
+                        architecto sunt voluptas velit ut amet, deserunt ipsum dolores laborum animi aliquam, fugiat
+                        eveniet
+                        libero tenetur incidunt? Animi, dolores temporibus!</p>
+                </div>
+            </div>
+
+            <div class="projetos-cards">
+                <img src="img/mitsuri-kanroji-3840x2160-16948.jpg" alt="" class="projetos-img">
+                <div class="caixa-projetos-texto">
+                    <h3 class="titulos-cards">Pizzaria</h3>
+
+                    <p class="paragrafos-cards">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+                        tempore
+                        architecto sunt voluptas velit ut amet, deserunt ipsum dolores laborum animi aliquam, fugiat
+                        eveniet
+                        libero tenetur incidunt? Animi, dolores temporibus!Lorem Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Accusantium numquam, illum iusto neque ipsum vitae ullam cumque nobis aut?
+                        Fugit blanditiis mollitia optio ipsum rem eum voluptatem nam doloribus laborum!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contatos" class="contato">
+        <h2>Entre em Contato</h2>
+        <div class="caixa-contato">
+            <form action="#" class="form-contato" method="post" onsubmit="enviarWhatsApp(event)">
+                <input type="text" placeholder="Nome" class="texto-contato" id="nome" required>
+
+                <textarea placeholder="Mensagem" class="texto-contato" id="mensagem" rows="6" required></textarea>
+
+                <button type="submit" class="btn">Enviar para WhatsApp</button>
+                <script>
+                    function enviarWhatsApp(event) {
+                        event.preventDefault();
+                        const nome = document.getElementById('nome').value;
+                        const mensagem = document.getElementById('mensagem').value;
+                        const numero = '5511952630864';
+
+
+                        const texto = `Olá, meu nome é ${nome}. ${mensagem}`;
+                        const textoFormatado = encodeURIComponent(texto);
+                        const url = `https://wa.me/${numero}?text=${textoFormatado}`;
+                        window.open(url, '_blank');
+                    }
+
+                </script>
+            </form>
+        </div>
+
+        <footer>
+
+            <div class="redesSociais">
+                <a href="https://github.com/tataas2" class="link-rede-social" target="_blank">
+                    <img src="img/github.png" alt="GitHub" class="icone-rede-social">
+                </a>
+
+                <a href="https://www.linkedin.com/in/tain%C3%A1-souza-401088309?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    class="link-rede-social" target="_blank">
+                    <img src="img/linkedin.png" alt="LinkedIn" class="icone-rede-social">
+                </a>
+            </div>
+            <div class="caixa-footer">
+                <p class="paragrafo-footer">© 2025 Tainá Souza. Todos os direitos reservados.</p>
+            </div>
+
+        </footer>
+
+</body>
+
+</html>
