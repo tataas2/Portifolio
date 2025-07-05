@@ -3,6 +3,8 @@
 Bem‑vinda(o) ao repositório que abriga o código‑fonte do meu site profissional.  
 Aqui você encontra meus projetos mais relevantes, um pouco sobre mim e as formas de contato. O objetivo é apresentar minhas habilidades com foco em **.NET, desenvolvimento Web, bancos de dados e cibersegurança.  
 
+❤️ Live demo: http://portfolio.tainasouza.com.br/
+
 ✨ Funcionalidades principais
 
 | Recurso | Descrição |
